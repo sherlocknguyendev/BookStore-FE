@@ -6,7 +6,7 @@ const FooterAdmin = () => {
     return (
         <>
             <div className="footer-admin">
-                Made by &copy; NguyenVanQuoc
+                Made by &copy; Phạm thị Kiều _ 1824l20035
             </div>
         </>
     )
