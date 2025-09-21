@@ -171,11 +171,13 @@ const UserTable = () => {
 
     const downloadCSV = () => {
         if (listUser.length > 0) {
+            // 1. Tạo worksheet (bảng) từ dữ liệu JSON (listUser)
             const worksheet = XLSX.utils.json_to_sheet(listUser);
+            // 2. Tạo một workbook (tệp Excel)
             const workbook = XLSX.utils.book_new();
+            // 3. Thêm worksheet vào workbook
             XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
-            //let buffer = XLSX.write(workbook, { bookType: "xlsx", type: "buffer" });
-            //XLSX.write(workbook, { bookType: "xlsx", type: "binary" });
+            // 4. Ghi workbook ra file CSV
             XLSX.writeFile(workbook, "DataExport.csv");
         }
 

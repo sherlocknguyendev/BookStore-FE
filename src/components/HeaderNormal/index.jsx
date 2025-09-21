@@ -1,7 +1,9 @@
 
 import './HeaderNormal.scss'
 
-import { BiLogoReact } from 'react-icons/bi'
+import { BiLogoReact } from 'react-icons/bi';
+import { MdOutlineLocalGroceryStore } from "react-icons/md";
+
 import { BsCart } from 'react-icons/bs'
 
 import { SearchOutlined } from '@ant-design/icons';
@@ -101,9 +103,10 @@ const HeaderNormal = ({ searchTerm, setSearchTerm }) => {
             <nav className='nav'>
                 <div className="nav_icon">
                     <Link className='icon' to='/'>
-                        <BiLogoReact />
+                        {/* <BiLogoReact /> */}
+                        <MdOutlineLocalGroceryStore />
                     </Link>
-                    <Link to='/' className='trademark'>BookStore</Link>
+                    <Link to='/' className='trademark'>Phạm Kiều Store</Link>
                 </div>
                 <div className="nav_search-cart">
                     <div className='search'>

@@ -5,7 +5,7 @@ const FooterNormal = () => {
     return (
         <>
             <div className="footer-normal">
-                Made by &copy; NguyenVanQuoc
+                Made by &copy; Phạm thị Kiều _ 1824l20035
             </div>
         </>
     )
